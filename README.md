@@ -1,0 +1,5 @@
+In this 140-lesson workshop, I learnt some more complex commands and the details of how commands work. This enabled me to create files like the doggy_ipsum_1.txt and doggy_ipsum_2.txt. 
+After that, I translated some words like meow, cat, catnip, meow, meowzer files from kitty_ipsum_1.txt and kitty_ipsum_2.txt to doggy_ipsum_1.txt and doggy_ipsum_2.txt. 
+This, I did by creating the file, translate.sh, adding the shebang (#!/bin/bash) at the beginning, and adding the script "cat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'" to run the changes to push the output of running the script into the new files. (./translate kitty_ipsum_1.txt > doggy_ipsum_1.txt).
+Moreover, i created the kitty_info.txt file to read word information about the kitty_ipsum_1.txt and kitty_ipsum_2.txt files. Some of the bash commands include:
+"grep" for finding word patterns, "cat" for reading the files, "wc" for looking at the word counts, and "sed" for changing patterns. These commands were not used in isolation but combined through piping "|", stdin "<", stdout ">", and stdout appendage ">>".
